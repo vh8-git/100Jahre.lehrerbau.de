@@ -1,0 +1,4 @@
+//Starten des local Host im Terminal
+
+/opt/homebrew/bin/php -S localhost:3012 -t "/Users/andreasvonhacht/Desktop/vhD/vhD Kunden/Lehrerbau eG/HLB_100Jahre/www.100Jahre.lehrerbau.de/public"
+
