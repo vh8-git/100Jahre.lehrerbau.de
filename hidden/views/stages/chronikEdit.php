@@ -10,10 +10,11 @@
                                     <button name="dataMark" class="nextpress cmsbutton cmb30" type="submit" value="5"></button>
                                     <button name="dataMark" class="savestoerer cmsbutton cmb100" type="submit" value="3"></button>
                                 </div>
+
                                 <?php if ( isset($_SESSION['login']) && $_SESSION['login'] == 1) :
                                     echo '<pre>';
-                                    //var_dump($_GET);
-                                    var_dump($_POST);
+                                    //var_dump($row);
+                                    //var_dump($_POST);
                                     //var_dump($_SESSION);
                                     //var_dump($result);
                                     echo '</pre>';
@@ -24,7 +25,7 @@
                                         <textarea id="<?php echo $key ?>"
                                                   name="<?php echo $key ?>"
                                                         <?php switch($key) {
-                                                        case "ID": echo 'onfocus="this.blur()"'; break;
+                                                        case "chronikID": echo 'onfocus="this.blur()"'; break;
                                                         default: ""; break;}?>
                                                         <?php if (strpos($key, 'Text') !== false) {
                                                         echo 'class="text"';}?>><?php echo $value ?></textarea>
